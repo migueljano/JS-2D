@@ -5,34 +5,44 @@
 /* SCRIVI QUI LA TUA RISPOSTA */
 let numero1 = 5;
 let numero2 = 8;
-let massimo = numeroGrande(numero1, numero2);
-
-function numeroGrande(numero1, numero2) {
-  if (numero1 > numero2) {
-      return numero1;
-  } else {
-      return numero2;
-  }
+if (numero1 > numero2) {
+  console.log('Il numero più frande è', numero1);
+} else if (numero1<numero2) {
+  console.log('Il numero più grande è', numero2);
+} else {
+  console.log('I numeri sono uguali');
 }
 
-console.log("Il numero più grande è:", massimo); // il numero grande è 8
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let x1 = 7;
+if(x1 !==5) {
+  console.log('not equal');
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let x2 = 15
+if (x2 % 5 === 0) {
+  console.log('divisible per 5') ;
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let y1 = 10;
+let y2 = 2;
+if(y1 === 8 || y2 === 8 || y1 + y2 ===8 || y2 - y1 ===8 ) {
+  console.log('vereficato')
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -40,8 +50,7 @@ console.log("Il numero più grande è:", massimo); // il numero grande è 8
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+/* SCRIVI QUI LA TUA RISPOSTA */ 
 let totalShoppingCart = 50;
 
 let shippingCost = 10;
@@ -60,6 +69,17 @@ console.log("Totale da addebitare:", totalToCharge);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let totalShoppingCart2 = 65
+totalShoppingCart2 = totalShoppingCart2 * 0.8
+let shippingCost2 = 10
+let amountToPay2 = totalShoppingCart2
+
+if (totalShoppingCart2 < 50) {
+  amountToPay2 += shippingCost2
+}
+
+console.log('Totale da pagare:', amountToPay2)
 
 
 /* ESERCIZIO 7
@@ -90,6 +110,13 @@ if (a>b && b>c){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let test = 'Ciao'
+
+if (typeof test === 'number') {
+  console.log('è un numero!')
+} else {
+  console.log('non è un numero!')
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
